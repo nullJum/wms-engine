@@ -1,69 +1,90 @@
-Proyecto Académico WMS (Jepack Solution)
+WMS Engine (Sistema de Gestión de Almacenes – Warehouse Management System)
 
-Este documento explica cómo importar la base de datos del proyecto WMS en otra computadora, así como las credenciales de acceso para pruebas.
+Proyecto académico enfocado en el desarrollo de un Sistema de Gestión de Almacenes (WMS) diseñado para administrar inventario, entradas y salidas de productos, así como operaciones básicas de almacenamiento.
 
----Requisitos---
+Este sistema fue desarrollado como parte de un proyecto académico de ingeniería de software y demuestra la implementación de software logístico basado en bases de datos.
 
-Para ejecutar este proyecto necesitas:
+Descripción General
 
-*SQL Server (Express o superior)
-*SQL Server Management Studio (SSMS)
-*El archivo generado: InstaladorBD.sql
-*Código fuente del proyecto (incluido en la entrega)
+El objetivo de este proyecto es simular un entorno simplificado de gestión de almacenes, donde los usuarios puedan:
 
----Restauración de la Base de Datos (Método de Script SQL)---
+Registrar y administrar productos
 
-Este proyecto utiliza un archivo de instalación que contiene toda la estructura y todos los datos de la base de datos actual.
+Controlar los niveles de inventario
 
-Sigue estos pasos en la computadora destino:
+Dar seguimiento a las entradas y salidas de mercancía
 
-1. Abrir el archivo de instalación
+Interactuar con una base de datos relacional mediante una aplicación de escritorio
 
-Abre SQL Server Management Studio (SSMS).
+El sistema integra una base de datos en SQL Server con una capa de aplicación diseñada para gestionar operaciones de almacén.
 
-Conéctate a tu instancia local.
+Tecnologías Utilizadas
 
-Ve a File > Open > File... y selecciona InstaladorBD.sql.
+C#
 
-2. Ejecutar el script
+.NET
 
-Verifica que el archivo abrió correctamente.
+SQL Server
 
-Haz clic en Execute o presiona F5.
+SQL Server Management Studio (SSMS)
 
-SSMS creará automáticamente la base de datos con su estructura y datos.
+Requisitos
 
-Una vez que finalice, la base de datos debería aparecer en el panel Object Explorer.
+Para ejecutar este proyecto necesitarás:
 
+SQL Server (Express o superior)
 
-🔑 Credenciales de Acceso (Modo Pruebas)
+SQL Server Management Studio (SSMS)
 
-Para acceder a la aplicación utiliza este usuario de pruebas:
+El script de instalación de la base de datos: InstaladorBD.sql
+
+El código fuente completo del proyecto
+
+Instalación de la Base de Datos
+
+Este proyecto incluye un script SQL que crea automáticamente la estructura de la base de datos y datos de ejemplo.
+
+Pasos
+
+Abrir SQL Server Management Studio (SSMS).
+
+Conectarse a la instancia local de SQL Server.
+
+Ir a File → Open → File.
+
+Seleccionar el archivo InstaladorBD.sql.
+
+Ejecutar el script haciendo clic en Execute o presionando F5.
+
+Una vez ejecutado, la base de datos debería aparecer en Object Explorer.
+
+Credenciales de Prueba
+
+El sistema incluye una cuenta de prueba para fines demostrativos.
 
 Usuario: admin
 
 Contraseña: 123
 
-⚠️ Estas credenciales son únicamente para evaluación académica.
+Estas credenciales se proporcionan únicamente para evaluación académica.
 
+Estructura del Proyecto
 
-
-📁 Estructura del Proyecto
-
-El proyecto se entrega con:
+El repositorio incluye:
 
 Código fuente completo
 
-Archivo InstaladorBD.sql (estructura + datos)
+Script de instalación de la base de datos SQL
 
-Documentación necesaria para ejecutarlo
+Documentación necesaria para ejecutar el sistema
 
-***** Notas Finales *****
+Aviso
 
-Este proyecto es de uso académico, por lo que puedes revisar, modificar y ejecutar el código sin restricciones.
+Este proyecto fue desarrollado con fines académicos y puede utilizarse para estudio, pruebas y modificaciones educativas.
 
-Si necesitas guía adicional para instalar, ejecutar o modificar la base de datos, no dudes en contactarme.
+Autor
 
-Email: 2402230212@cesunbc.edu.mx
+Alejandro Juárez
+GitHub: https://github.com/nulljum
 
-
+Proyecto desarrollado bajo JumEngine.
